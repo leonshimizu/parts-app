@@ -1,0 +1,29 @@
+GET http://localhost:3000/parts
+
+###
+POST http://localhost:3000/parts
+content-type: application/json
+
+{
+  "name": "1/4 Drive High-Precision Torque Wrench (40-200 in-lb)",
+  "price": 0.00,
+  "og_website": "https://shop.snapon.com/",
+  "ships": false
+}
+
+###
+GET http://localhost:3000/parts/4
+
+###
+PATCH http://localhost:3000/parts/5
+content-type: application/json
+
+{
+  "name": "18 V 1/2 Drive Brushless Cordless Impact Wrench Kit (Red)",
+  "price": 971.95,
+  "og_website": "https://shop.snapon.com/",
+  "ships": false
+}
+
+###
+DELETE http://localhost:3000/parts/6
